@@ -1,62 +1,53 @@
-<h2 align="left">Hi 👋! Hi, my name is Luis Henrique and I'm studying Information Technology Management in Brazil 🇧🇷</h2>
+# CyberSentinel - Soluções de Cibersegurança
 
-###
+CyberSentinel é uma empresa especializada em fornecer soluções de cibersegurança para proteger empresas e indivíduos contra ameaças digitais. Com um design moderno e foco em segurança, nossa missão é garantir a proteção das informações sensíveis e ajudar a mitigar riscos no ambiente online.
 
-<img align="right" height="150" src="https://user-images.githubusercontent.com/81328619/213875785-400ae517-156b-4aca-a787-bac75d84c393.gif" />
+## 🌐 Página Institucional
 
-###
+A página institucional da CyberSentinel foi desenvolvida com um design inovador, com animações modernas e um layout responsivo para fornecer uma excelente experiência do usuário.
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" alt="typescript logo" />
-</div>
+- **Design moderno:** Interface de fácil navegação com foco na experiência do usuário.
+- **Animações interativas:** Animações suaves e interativas para criar um site envolvente.
+- **Informações claras:** Detalhamento sobre os serviços oferecidos, proteção digital e benefícios de trabalhar com a CyberSentinel.
 
-###
+## 🛠️ Tecnologias Utilizadas
 
-<div align="left">
-  <a href="https://www.instagram.com/xxluisxx.tw300f/?hl=pt-br" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo" />
-  </a>
-  <a href="https://twitch.tv/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Twitch&logo=twitch&label=&color=9146FF&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="twitch logo" />
-  </a>
-  <a href="https://discord.com/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo" />
-  </a>
-  <a href="mailto:luishenrique3489@gmail.com" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo" />
-  </a>
-  <a href="https://www.linkedin.com/in/luis-henrique-895930141/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo" />
-  </a>
-  <a href="https://wa.me/message/4UNXSII4O4KLP1" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Whatsapp&logo=whatsapp&label=&color=25D366&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="whatsapp logo" />
-  </a>
-</div>
+A página institucional foi construída com as seguintes tecnologias:
 
-###
+- `HTML` - Estrutura básica da página.
+- `CSS` - Estilos e layout, incluindo animações e efeitos.
+- `JavaScript` - Funcionalidades interativas, animações dinâmicas e interações com o usuário.
 
-## 🚀 Meus Projetos
+## 🚀 Funcionalidades
 
-| Projeto | Descrição | Tecnologias |
-|--------|-----------|-------------|
-| [🎬 FilmesFlix](https://github.com/ProgramandoProjetos/filmesflix) | Plataforma estilo Netflix com catálogo, filtros, favoritos e player de trailers. | `HTML` `CSS` `JavaScript` |
-| [🛡️ CyberSentinel](https://github.com/ProgramandoProjetos/cybersentinel) | Página institucional de empresa de cibersegurança com design moderno e animações. | `HTML` `CSS` `JavaScript` |
-| [📦 Start Store](https://github.com/ProgramandoProjetos/startstore) | Página para e-commerce no Mercado Livre com integração visual e marketing. | `HTML` `CSS` |
-| [🌦️ Weather App](https://github.com/ProgramandoProjetos/weatherapp) | App de previsão do tempo com modo escuro automático e animações de fundo. | `HTML` `CSS` `JS` |
+- **Animações modernas:** Elementos de página interativos e animações para melhorar a experiência do usuário.
+- **Informações detalhadas sobre segurança:** Descrição dos serviços oferecidos pela CyberSentinel e como ajudamos a proteger seus dados.
+- **Design Responsivo:** A página se adapta perfeitamente a dispositivos móveis, tablets e desktops.
+
+## 📈 Demonstração
+
+![CyberSentinel Demo](https://example.com/cybersentinel-demo.gif)
+
+> A imagem acima mostra uma demonstração da nossa página institucional em ação.
+
+## 📚 Como Contribuir
+
+Se você deseja contribuir com o desenvolvimento da página ou aprimorar nossos serviços, siga as etapas abaixo:
+
+1. Faça um fork deste repositório.
+2. Crie uma branch para sua nova feature (ex: `git checkout -b nova-feature`).
+3. Comite suas alterações (ex: `git commit -am 'Adicionando nova feature'`).
+4. Envie a branch para o repositório remoto (ex: `git push origin nova-feature`).
+5. Abra um Pull Request.
+
+## 📬 Contato
+
+Se você tem dúvidas ou quer mais informações, entre em contato conosco:
+
+- Email: [contato@cybersentinel.com](mailto:contato@cybersentinel.com)
+- [LinkedIn](https://www.linkedin.com/in/cybersentinel)
+- [Website](https://www.cybersentinel.com)
 
 ---
 
-## 📈 Contribuições GitHub
-
-<p align="left">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ProgramandoProjetos&show_icons=true&theme=radical&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ProgramandoProjetos&layout=compact&langs_count=7&theme=radical"/>
-</p>
+Obrigado por visitar o repositório do **CyberSentinel**!
