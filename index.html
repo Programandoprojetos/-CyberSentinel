@@ -2,459 +2,175 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="CyberSentinel oferece soluções de segurança cibernética para proteger dados e informações. Consultoria, pentest e monitoramento 24/7." />
-    <meta name="keywords" content="segurança cibernética, pentest, monitoramento, vulnerabilidades, consultoria" />
-    <title>CyberSentinel - Segurança da Informação</title>
-    <!-- Inclusão da fonte Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- Inclusão do AOS para animações -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <!-- Inclusão do FontAwesome para ícones -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <style>
-        /* CSS GLOBAL */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #0d1117;
-            color: #f0f6fc;
-            scroll-behavior: smooth;
-        }
-
-        /* Adicionando o efeito de partículas */
-        #particles-js {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-
-        /* Estilo da seção HERO */
-        .hero {
-            background-image: url('https://wallpapers.com/images/featured/seguranca-cibernetica-ivcowv89j1g1ff4m.jpg');
-            background-size: cover;
-            background-position: center;
-            padding: 100px 20px;
-            text-align: center;
-            color: #fff;
-            position: relative;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            color: #58a6ff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        }
-
-        .hero p {
-            margin: 20px 0;
-            font-size: 1.2rem;
-        }
-
-        .btn {
-            padding: 12px 24px;
-            background-color: #58a6ff;
-            color: #fff;
-            border: none;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 8px;
-            transition: background 0.3s ease, transform 0.3s ease;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn:hover {
-            background-color: #1f6feb;
-            transform: scale(1.1);
-            animation: pulse 0.5s ease-in-out;
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.1);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        /* Estilos para a seção de SERVIÇOS */
-        .servicos {
-            background-color: #161b22;
-            padding: 60px 20px;
-            color: #fff;
-            text-align: center;
-        }
-
-        .servicos h2 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            color: #58a6ff;
-        }
-
-        .service-card {
-            display: inline-block;
-            width: 250px;
-            background: #1f2937;
-            margin: 20px;
-            padding: 30px;
-            border-radius: 8px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.5);
-        }
-
-        .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: #58a6ff;
-        }
-
-        .service-card p {
-            font-size: 1.1rem;
-            color: #d1d5db;
-        }
-
-        .service-card img {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 15px;
-        }
-
-        .social-icons a {
-            font-size: 2rem;
-            color: #58a6ff;
-            margin: 0 15px;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: #1f6feb;
-        }
-
-        footer {
-            background-color: #161b22;
-            padding: 20px;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .btn {
-                padding: 10px 20px;
-            }
-
-            .service-card {
-                width: 100%;
-                margin: 10px 0;
-            }
-        }
-
-        /* Estilo da seção Feedback */
-        .feedback-section {
-            padding: 60px 20px;
-            background-color: #1f2937;
-            color: #fff;
-        }
-
-        .feedback-section h2 {
-            font-size: 2rem;
-            color: #58a6ff;
-            margin-bottom: 20px;
-        }
-
-        .feedback-card {
-            background-color: #2a3a47;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 15px 0;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: start;
-        }
-
-        .feedback-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
-        }
-
-        .feedback-card img {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-
-        .feedback-card .name {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #58a6ff;
-        }
-
-        .feedback-card .message {
-            font-size: 1rem;
-            color: #d1d5db;
-        }
-
-        /* Ajustando as redes sociais acima da seção Hero */
-        .social-icons {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            z-index: 10;
-        }
-
-        /* Menu Interativo */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 20;
-        }
-
-        .navbar a {
-            color: #58a6ff;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 20px;
-            transition: color 0.3s ease;
-        }
-
-        .navbar a:hover {
-            color: #1f6feb;
-        }
-    </style>
+        content="CyberSentinel oferece soluções de segurança cibernética, pentest, consultoria e monitoramento 24/7.">
+    <meta name="keywords" content="segurança cibernética, pentest, monitoramento, vulnerabilidades, consultoria">
+    <title>CyberSentinel | Segurança da Informação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <!-- Menu Interativo -->
-    <nav class="navbar">
-        <a href="#hero">Início</a>
-        <a href="#sobre">Sobre Nós</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#feedback">Feedback</a>
-        <a href="#contato">Contato</a>
+    <nav class="navbar" aria-label="Menu principal">
+        <a class="brand" href="#hero">
+            <img class="brand-logo" src="assets/img/CyberSentinel.png" alt="CyberSentinel">
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links">
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#feedback">Clientes</a>
+            <a href="#contato">Contato</a>
+            <a class="nav-login" href="login.html">Login</a>
+        </div>
     </nav>
 
-    <!-- REDES SOCIAIS NO CANTO SUPERIOR DIREITO -->
-    <div class="social-icons">
-        <a href="https://facebook.com" class="social-icon"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="https://linkedin.com" class="social-icon"><i class="fab fa-linkedin"></i></a>
-    </div>
-
-    <!-- SEÇÃO HERO -->
     <header class="hero" id="hero">
-        <div id="particles-js"></div>
-        <div class="container">
-            <h1 data-aos="fade-down">CyberSentinel</h1>
-            <p data-aos="fade-up">Protegendo seus dados. Garantindo seu futuro.</p>
-            <a href="#servicos" class="btn" data-aos="zoom-in">Nossos Serviços</a>
+        <div id="particles-js" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="eyebrow" data-aos="fade-up">Defesa digital para empresas modernas</p>
+            <h1 data-aos="fade-up" data-aos-delay="100">Proteja dados, sistemas e reputação com inteligência.</h1>
+            <p class="hero-copy" data-aos="fade-up" data-aos-delay="180">
+                Pentest, análise de vulnerabilidades e monitoramento contínuo em uma experiência clara,
+                confiável e pronta para apresentar no seu portfólio.
+            </p>
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="260">
+                <a class="btn btn-primary" href="#servicos">Conhecer serviços</a>
+                <a class="btn btn-secondary" href="login.html">Acessar portal</a>
+            </div>
         </div>
     </header>
 
-    <!-- SEÇÃO SOBRE -->
-    <section class="sobre" id="sobre">
-        <div class="container" data-aos="fade-right">
-            <h2>Sobre Nós</h2>
-            <p>A CyberSentinel é especializada em cibersegurança para empresas e indivíduos. Atuamos com análise de
-                vulnerabilidades, pentest, consultoria e monitoramento 24/7.</p>
-        </div>
-    </section>
-
-    <!-- SEÇÃO SERVIÇOS -->
-    <section class="servicos" id="servicos">
-        <div class="container" data-aos="fade-left">
-            <h2>Serviços</h2>
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRr1eYI0OAPCN30xiQvsGrLA5TLeiziCb1Kg&s"
-                    alt="Ícone Pentest">
-                <h3>Pentest</h3>
-                <p>Testes de invasão para identificar vulnerabilidades reais em seu sistema.</p>
-            </div>
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwndGX9EB9E2AY7FvC5d1RxBGvM9yfl_ioig&s"
-                    alt="Ícone Análise de Vulnerabilidades">
-                <h3>Análise de Vulnerabilidades</h3>
-                <p>Análise detalhada para descobrir e corrigir possíveis pontos fracos.</p>
-            </div>
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
-                <img src="https://img.freepik.com/vetores-premium/ilustracao-vetorial-de-conceito-de-tecnologia-com-elementos-de-estilo-plano-de-design-de-consultoria_1226483-4088.jpg?semt=ais_hybrid&w=740"
-                    alt="Ícone Consultoria Digital">
-                <h3>Consultoria Digital</h3>
-                <p>Consultoria especializada para fortalecer a segurança da sua empresa.</p>
-            </div>
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo4oqRuSRe3MHFH_8yoaYFVNonw5EitlNg-w&s"
-                    alt="Ícone Monitoramento 24/7">
-                <h3>Monitoramento 24/7</h3>
-                <p>Monitoramento contínuo para detectar e responder a incidentes em tempo real.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEÇÃO FEEDBACK -->
-    <section class="feedback-section" id="feedback">
-        <div class="container" data-aos="fade-up">
-            <h2>Feedback de Clientes</h2>
-            <div class="feedback-card" data-aos="zoom-in" data-aos-delay="100">
-                <img src="https://via.placeholder.com/70" alt="Avatar Cliente">
-                <div>
-                    <div class="name">João Silva</div>
-                    <div class="message">"A CyberSentinel ajudou nossa empresa a identificar e corrigir vulnerabilidades
-                        graves. Eles são altamente qualificados e confiáveis."</div>
+    <main>
+        <section class="sobre section-band" id="sobre">
+            <div class="container split-layout">
+                <div data-aos="fade-right">
+                    <p class="section-kicker">Sobre nós</p>
+                    <h2>Segurança com visão estratégica, técnica e humana.</h2>
+                    <p>
+                        A CyberSentinel é especializada em cibersegurança para empresas e pessoas que precisam
+                        proteger informações críticas. Atuamos com testes de invasão, consultoria, resposta a
+                        incidentes e monitoramento 24/7.
+                    </p>
+                </div>
+                <div class="metrics-panel" data-aos="fade-left">
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Monitoramento ativo</span>
+                    </div>
+                    <div>
+                        <strong>98%</strong>
+                        <span>Riscos priorizados</span>
+                    </div>
+                    <div>
+                        <strong>+40</strong>
+                        <span>Controles avaliados</span>
+                    </div>
                 </div>
             </div>
-            <div class="feedback-card" data-aos="zoom-in" data-aos-delay="200">
-                <img src="https://via.placeholder.com/70" alt="Avatar Cliente">
-                <div>
-                    <div class="name">Maria Oliveira</div>
-                    <div class="message">"Excelente serviço de monitoramento 24/7. Nossa empresa se sente muito mais
-                        segura sabendo que a CyberSentinel está por trás."</div>
+        </section>
+
+        <section class="servicos" id="servicos">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <p class="section-kicker">Serviços</p>
+                    <h2>Uma operação de segurança mais preparada.</h2>
+                </div>
+                <div class="service-grid">
+                    <article class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="service-icon">PT</div>
+                        <h3>Pentest</h3>
+                        <p>Testes de invasão para identificar vulnerabilidades reais antes que elas virem incidentes.</p>
+                    </article>
+                    <article class="service-card" data-aos="zoom-in" data-aos-delay="180">
+                        <div class="service-icon">AV</div>
+                        <h3>Análise de Vulnerabilidades</h3>
+                        <p>Mapeamento técnico com priorização de correções por impacto, urgência e exposição.</p>
+                    </article>
+                    <article class="service-card" data-aos="zoom-in" data-aos-delay="260">
+                        <div class="service-icon">CD</div>
+                        <h3>Consultoria Digital</h3>
+                        <p>Orientação para políticas, processos e arquitetura de segurança mais resiliente.</p>
+                    </article>
+                    <article class="service-card" data-aos="zoom-in" data-aos-delay="340">
+                        <div class="service-icon">SOC</div>
+                        <h3>Monitoramento 24/7</h3>
+                        <p>Detecção, alerta e resposta para reduzir o tempo entre ameaça e ação.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SEÇÃO CONTATO -->
-    <section class="contato" id="contato">
-        <div class="container" data-aos="fade-up">
-            <h2>Fale Conosco</h2>
-            <form action="" method="POST">
-                <input type="text" placeholder="Seu Nome" required><br>
-                <input type="email" placeholder="Seu Email" required><br>
-                <textarea placeholder="Sua Mensagem" required></textarea><br>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-        </div>
-    </section>
+        <section class="feedback-section section-band" id="feedback">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <p class="section-kicker">Clientes</p>
+                    <h2>Confiança construída em cada entrega.</h2>
+                </div>
+                <div class="feedback-grid">
+                    <article class="feedback-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80"
+                            alt="Cliente Maria Oliveira">
+                        <div>
+                            <strong>Maria Oliveira</strong>
+                            <p>“O monitoramento 24/7 trouxe clareza para nossa equipe e reduziu muito o tempo de resposta.”</p>
+                        </div>
+                    </article>
+                    <article class="feedback-card" data-aos="fade-up" data-aos-delay="180">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80"
+                            alt="Cliente João Silva">
+                        <div>
+                            <strong>João Silva</strong>
+                            <p>“O pentest revelou falhas importantes e recebemos um plano objetivo para corrigir tudo.”</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <!-- RODAPÉ -->
+        <section class="contato" id="contato">
+            <div class="container contact-layout">
+                <div data-aos="fade-right">
+                    <p class="section-kicker">Contato</p>
+                    <h2>Vamos fortalecer sua segurança?</h2>
+                    <p>Envie uma mensagem e receba um primeiro diagnóstico para entender os próximos passos.</p>
+                </div>
+                <form class="contact-form" action="#" method="POST" data-aos="fade-left">
+                    <label>
+                        Nome
+                        <input type="text" name="nome" placeholder="Seu nome" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </label>
+                    <label>
+                        Mensagem
+                        <textarea name="mensagem" placeholder="Como podemos ajudar?" required></textarea>
+                    </label>
+                    <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2025 CyberSentinel. Todos os direitos reservados.</p>
+        <p>&copy; 2026 CyberSentinel. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- SCRIPT AOS PARA ANIMAÇÕES -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Inicialização do AOS
-        AOS.init({
-            duration: 1200,
-        });
-
-        // Partículas
-        particlesJS("particles-js", {
-            particles: {
-                number: {
-                    value: 80,
-                    density: {
-                        enable: true,
-                        value_area: 800
-                    }
-                },
-                color: {
-                    value: "#ffffff"
-                },
-                shape: {
-                    type: "circle",
-                    stroke: {
-                        width: 0,
-                        color: "#000000"
-                    }
-                },
-                opacity: {
-                    value: 0.5,
-                    random: true,
-                    anim: {
-                        enable: true,
-                        speed: 1,
-                        opacity_min: 0.1,
-                        sync: false
-                    }
-                },
-                size: {
-                    value: 3,
-                    random: true,
-                    anim: {
-                        enable: true,
-                        speed: 40,
-                        size_min: 0.1,
-                        sync: false
-                    }
-                },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: "#ffffff",
-                    opacity: 0.4,
-                    width: 1
-                },
-                move: {
-                    enable: true,
-                    speed: 6,
-                    direction: "none",
-                    random: true,
-                    straight: false,
-                    out_mode: "out",
-                    bounce: false,
-                    attract: {
-                        enable: false,
-                        rotateX: 600,
-                        rotateY: 1200
-                    }
-                }
-            },
-            interactivity: {
-                detect_on: "canvas",
-                events: {
-                    onhover: {
-                        enable: true,
-                        mode: "repulse"
-                    },
-                    onclick: {
-                        enable: true,
-                        mode: "push"
-                    },
-                    resize: true
-                }
-            },
-            retina_detect: true
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

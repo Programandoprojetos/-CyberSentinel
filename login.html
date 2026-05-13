@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login do portal CyberSentinel.">
+    <title>Login | CyberSentinel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="login-page">
+    <main class="login-shell">
+        <section class="login-visual" aria-label="Apresentação CyberSentinel">
+            <a class="brand login-brand" href="index.html">
+                <img class="brand-logo" src="assets/img/CyberSentinel.png" alt="CyberSentinel">
+            </a>
+            <div class="login-visual-content">
+                <p class="eyebrow">Portal seguro</p>
+                <h1>Controle sua postura de segurança em um só lugar.</h1>
+                <p>
+                    Acompanhe alertas, relatórios de pentest, vulnerabilidades priorizadas e ações de resposta.
+                </p>
+            </div>
+        </section>
+
+        <section class="login-panel" aria-label="Formulário de login">
+            <a class="back-link" href="index.html">Voltar para o site</a>
+            <form class="login-form" action="#" method="POST" data-login-form>
+                <div>
+                    <p class="section-kicker">Bem-vindo</p>
+                    <h2>Acesse sua conta</h2>
+                    <p class="form-intro">Entre para visualizar o painel de segurança CyberSentinel.</p>
+                    <p class="demo-access">Acesso demo: <strong>admin@cybersentinel.com</strong> / <strong>123456</strong></p>
+                </div>
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder="seuemail@empresa.com" autocomplete="email" required>
+                </label>
+                <label>
+                    Senha
+                    <input type="password" name="senha" placeholder="Sua senha" autocomplete="current-password" required>
+                </label>
+                <p class="form-message" data-login-message aria-live="polite"></p>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="lembrar">
+                        Lembrar acesso
+                    </label>
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+                <button type="submit" class="btn btn-primary full-width">Entrar</button>
+                <p class="signup-note">Ainda não tem acesso? <a href="index.html#contato">Fale conosco</a>.</p>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
